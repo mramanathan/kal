@@ -1,10 +1,10 @@
 import csv
 # print("hello world")
-# print('Welcome to RV', 23)
+# print('Welcome to GITAM', 10)
 # I am a variable
 name = 'Python'
 # print(name)
-name = 'RV'
+name = 'GITAM'
 # print(name)
 # unicode
 # int
@@ -107,7 +107,7 @@ collection = ['Lang', 23, 1989, 34.90]
 collection[2] = 'Python'
 # print(collection)
 # Add a new item at the end
-collection.append('Tamil')
+collection.append('Telugu')
 # print(collection)                        
 # Find an element in the list
 # print(collection.index(23))
@@ -137,8 +137,8 @@ collection.append(weekdays)
 
 # Write list of movies to file
 file = open('movies.txt', 'w')
-file.write('Fight Club\n')
-file.write('The batman\n')
+file.write('The Secret World of Pets\n')
+file.write('Big Fat Giant\n')
 file.close()
 # Read list of movies from the file.
 
@@ -175,15 +175,14 @@ if 'read' in sys.argv:
     print('you passed read argument', sys.argv[-1])
 
 # Dictionary
-rating = {'The God father': 9.8, 'The Batman': 9,
-          'Langs': ['Python'], 'a': 23}
-# print(rating['lang'])
+rating = {'The God Father': 9.8, 'The Secret World of Pets': 9, 'Langs': ['Python'], 'GITAM': 10}
+# print(rating['Langs'])
 for key, val in rating.items():
     if key == 'Langs':
         rating[key].append('python')
 # Add a new item
-rating['The Joker'] = 8.9
-print('The Joker' in rating)
+rating['PyCon'] = 2016
+print('PyCon' in rating)
 print(rating)
 # Print key and value
 #
@@ -207,25 +206,13 @@ class Person:
         return 2016 - self.year_of_birth
 
 
-krace = Person('Krace', 1989, 'Kumar')
+ram = Person('Ram', 1973, 'M')
 siva = Person(last_name='Kumar', first_name='Siva',
               year_of_birth=1984)
-print(krace.first_name, krace.last_name)
-print(krace)
+print(ram.first_name, ram.last_name)
+print(ram)
 print(siva.first_name, siva.last_name)
 print(siva.age())
 # Change attribute value
 siva.first_name = 'Siva Subramaniam'
 print(siva.first_name)
-
-# Create a method
-
-
-
-
-
-
-
-
-
-
